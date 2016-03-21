@@ -31,9 +31,16 @@ function chageColor(id) {
     //location.reload();
 }
 
+var flag = 0;
 for(var i = 1; i <= 16; i++ ) {
-    document.getElementById(i).addEventListener('click', function chageColor(){
-        this.setAttribute("style", "background-color: red");
+    document.getElementById(i).addEventListener('click', function chageColor(schema){
+        if(flag == 0) {
+            this.setAttribute("style", "background-color: red");
+            flag = 1;
+        } else {
+            this.setAttribute("style", "background-color: " + schema.toElement.className);
+            flag = 0;
+        }
     });
 }
 
