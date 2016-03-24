@@ -27,9 +27,6 @@ for(var i=0; i<4; i++){
 
 board.innerHTML = str;
 
-function chageColor(id) {
-    //location.reload();
-}
 
 var flag = 0;
 for(var i = 1; i <= 16; i++ ) {
