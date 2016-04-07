@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open API</title>
+</head>
+<body>
+<div align="center">
+<input type="text" align="center" id="main">
+<input type="button" id="input-btn" value="검색">
+<script id="template" type="text/template" >
+    <%
+    for(var i=0; i<list.length; i++) {
+    var movie = list[i];
+    %>
+    <li>
+        <div><%=list.%></a></div>
+    </li>
+    <% }%>
+</script>
+<script src="openapi.js"></script>
+</div>
+</body>
+</html>
