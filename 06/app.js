@@ -10,7 +10,7 @@ function render(wrap, template, data) {
 
 getJSON(apiurl, function(res){
     console.log(res);
-
+    
     render( wrap, template, res.data);
 
 });
