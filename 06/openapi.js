@@ -20,6 +20,7 @@ btn.addEventListener('click', function () {
         var html = tmpl(template, {list : item});
         wrap.innerHTML = html;
     });
+    moreBtn.removeAttribute("hidden");
     pageNum = 1;
 });
 
