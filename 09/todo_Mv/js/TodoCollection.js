@@ -30,6 +30,11 @@
 
       app.$wrap.trigger("removeCollection", [data]);
 
+    },
+    changed: function () {
+
+      app.$wrap.trigger("changedCollection", [data]);
+
     }
 
   };

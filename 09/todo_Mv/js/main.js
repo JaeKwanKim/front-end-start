@@ -22,10 +22,19 @@
 
   });
 
+  $listDom.on('click', '.toggle_checked', function(event){
+
+    var $toggleBtn = $(event.target);
+    var checked = $toggleBtn.checked;
+
+    app.collection.changed( checked );
+
+  });
+  
   // //처음 로딩시에 기존에 저장된 데이터 가져와서 보여주기
   var initData = app.util.storage.load();
   if(initData) {
-    console.log(initData)
+    console.log(initData);
     app.collection.set( initData );
   }
 

@@ -27,7 +27,6 @@ for(var i=0; i<4; i++){
 
 board.innerHTML = str;
 
-
 var flag = 0;
 for(var i = 1; i <= 16; i++ ) {
     document.getElementById(i).addEventListener('click', function chageColor(schema){
