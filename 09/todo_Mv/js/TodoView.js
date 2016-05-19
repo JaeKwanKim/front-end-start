@@ -23,7 +23,7 @@
       var todo = $.extend({}, app.model, {
         id: app.util.uniqId(),
         title: fieldValue,
-        isCheck: isValue
+        isCheck: false
       });
 
       //console.log('new​ todo.model:', todo);

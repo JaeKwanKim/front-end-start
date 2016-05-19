@@ -33,7 +33,7 @@
     },
     changed: function () {
 
-      app.$wrap.trigger("changedCollection", [data]);
+      app.$wrap.trigger("addCollection", [data]);
 
     }
 
